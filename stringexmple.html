@@ -7,6 +7,53 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>There are many string methods like
+        string.length.slice,string.substring,string.substr
+    </h1>
+    <div id="demo">
+        <p id="ans"> </p>
+        <p id="ans1"> </p>
+        <p id="ans2"> </p>
+        <p id="ans3"> </p>
+        <p id="ans6"> </p>
+        <p id="ans7"> </p>
+        <p id="ans8"> </p>
+        <p id="ans9"> </p>
+        <p id="ans10"> </p>
+        <p id="ans11"> </p>
+        <p id="ans12"> </p>
+    </div>
+    <script>
+        var str="hridik";
+        var str1="vandanarajput";
+        var out2="this is str.slice method and answer is "+str.slice(1,5) + " " +str.slice(1);
+        var out1=str.length;
+        document.getElementById('ans').innerHTML=out2;  //ans is ridi bcoz starting is from 0 and end end-1
+        var out3=str.slice(-4,-2);        
+        document.getElementById('ans1').innerHTML=out3; //ans is id only counting from last with one 
+       var out4=str1.substring(1,8) +" "+str1.substring(1);
+       document.getElementById('ans2').innerHTML=out4;   
+       var out5= str1.substr(4,5);
+       document.getElementById('ans3').innerHTML=out5; 
+       var txt1="hii dell,i love my Dell laptop";
+       var txt2="this is my first love";
+       var out6=txt1.concat("_",txt2);
+       document.getElementById('ans6').innerHTML=out6; 
+       var out7=txt1.replace('dell','hcl');
+       document.getElementById('ans7').innerHTML=out7; 
+       var out8=txt1.replace(/Dell/ig,'hcl'); //for global and case insensitive
+       document.getElementById('ans8').innerHTML=out8; 
+       var txtup="   SSDF JDSFSDJFS KJKDFHSDJKFSD";
+       var txtlw=" sdfsd sfdsjf    jfjhsdkjfsd  ";
+       var out9=txtup.toLowerCase();
+       var out10=txtlw.toUpperCase();
+       var out11=txtup.trim();
+       let text = "HELLO WORLD";
+        let char1 = text.charAt(0);
+       document.getElementById('ans9').innerHTML=out9;
+       document.getElementById('ans10').innerHTML=out10;
+       document.getElementById('ans11').innerHTML=out11;
+       document.getElementById('ans12').innerHTML=char1;       
+      </script>
 </body>
 </html>

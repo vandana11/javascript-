@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        var arr=[1,2,4,5,5];
+        //console.log(arr);
+        var length=arr.length;
+        console.log(length);
+        const ar=new Array(2); //using a constructor array is created
+        let ar1=new Array('hii','hello');
+        console.log(ar);
+        console.log(ar1);
+        let a1=['soni','vandana'];
+        let a2=['vandana'];
+        console.log("join "+a1.join(' '));
+        console.log(a1.concat(a2));
+        console.log(a1.indexOf('vandana'));
+        console.log(a1.indexOf('vandama')); //if not present the it gives o/p -1
+        console.log(a1.push('lovel'));
+        console.log(a1);
+        console.log(a1.pop());
+        console.log(a1);
+        var newar=a1.unshift('naitik');
+        console.log(newar);
+        const fruits = ['Apple', 'Banana', 'Strawberry'];
+        const start = -2;
+        const deleteCount = 2;
+        const removedItems = fruits.splice(start, deleteCount, 'Mango', 'Cherry');
+        console.log(fruits);
+        // ["Apple", "Mango", "Cherry"]
+        console.log(removedItems);
+        // ["Banana", "Strawberry"]
+            </script>
+</body>
+</html>
