@@ -18,7 +18,7 @@
         console.log(ar1);
         let a1=['soni','vandana'];
         let a2=['vandana'];
-        console.log(a1.join(' '));
+        console.log("join "+a1.join(' '));
         console.log(a1.concat(a2));
         console.log(a1.indexOf('vandana'));
         console.log(a1.indexOf('vandama')); //if not present the it gives o/p -1
@@ -29,13 +29,13 @@
         var newar=a1.unshift('naitik');
         console.log(newar);
         const fruits = ['Apple', 'Banana', 'Strawberry'];
-const start = -2;
-const deleteCount = 2;
-const removedItems = fruits.splice(start, deleteCount, 'Mango', 'Cherry');
-console.log(fruits);
-// ["Apple", "Mango", "Cherry"]
-console.log(removedItems);
-// ["Banana", "Strawberry"]
-    </script>
+        const start = -2;
+        const deleteCount = 2;
+        const removedItems = fruits.splice(start, deleteCount, 'Mango', 'Cherry');
+        console.log(fruits);
+        // ["Apple", "Mango", "Cherry"]
+        console.log(removedItems);
+        // ["Banana", "Strawberry"]
+            </script>
 </body>
 </html>
